@@ -1,0 +1,29 @@
+total = float(input("enter the amount of money u have"))
+
+x = float (input("enter stating cost of footbar"))
+
+increament =0.2
+
+count =1
+
+if total < 0 :
+    print ("please enter positive value")
+
+elif x<0 :
+    print("please insert positive value of footbar")
+
+elif total<x :
+    print ("U have No Enough Cost To by it")
+
+
+else :
+    while total>x :
+        total = round(total-x,2)
+        x = round((1+increament)*x,2)
+        count=count+1
+
+    print("Total Footbar that u have afford: ",count)
+    print("Change will u get is : ", total)
+    print("Last footbar cost is : ", x)
+
+
